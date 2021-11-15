@@ -25,5 +25,10 @@ To populate the database, activate the virtual environment and run:
 PYTHONPATH=. python scripts/init_db.py
 ```
 
+After this, process the data locally (and fill the /data/processed/ folder) by running:
+```bash
+PYTHONPATH=. python scripts/process_data.py
+```
+
 The database schema is as below:
 ![Database Schema](https://i.imgur.com/HRhd2Y0.png "Database Schema")
