@@ -4,7 +4,7 @@ import dotenv
 from sqlalchemy import create_engine
 
 
-def create_sql_alchemy_db_engine(db_name="brazil"):
+def create_sql_alchemy_db_engine(db_name: str = "brazil"):
     """
     Requires correctly configured .env file
     """
