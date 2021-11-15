@@ -6,7 +6,7 @@ engine = create_sql_alchemy_db_engine()
 
 DATA_SOURCES = [
     'customers', 'geolocation', 'order_items', 'order_payments',
-    'orders', 'products', 'sellers'
+    'orders', 'products', 'sellers', 'order_reviews'
 ]
 
 PARSE_DATES_COLS = {
@@ -16,7 +16,11 @@ PARSE_DATES_COLS = {
         'order_approved_at',
         'order_delivered_carrier_date',
         'order_estimated_delivery_date'
-    ]
+    ],
+    'order_reviews': [
+        "review_creation_date",
+        "review_answer_timestamp"
+    ],
 }
 
 if __name__ == "__main__":
